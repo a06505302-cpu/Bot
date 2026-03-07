@@ -175,7 +175,7 @@ def main(message):
 		else:
 		    active_scans.add(user_id)
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text=f"Paypal Commerce $1",callback_data='br')
+		contact_button = types.InlineKeyboardButton(text=f"Paypal Commerce $5",callback_data='br')
 		keyboard.add(contact_button)
 		bot.reply_to(message, text=f'𝘾𝙝𝙤𝙤𝙨𝙚 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩 𝙏𝙤 𝙐𝙨𝙚',reply_markup=keyboard)
 		ee = bot.download_file(bot.get_file(message.document.file_id).file_path)
@@ -376,7 +376,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 • Gateway : {gate}		
 {info}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : </b>'''
 	msgd=f'''<b>Declined ❌
 			
 • Card : <code>{cc}</code>
@@ -395,7 +395,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 {info}
 • Vbv : {vbvv}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : </b>'''
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
 	elif 'security code is incorrect' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgc)
