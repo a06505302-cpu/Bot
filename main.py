@@ -71,7 +71,7 @@ def start(message):
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي >> {name}
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار 
 </b>
 	''',reply_markup=keyboard)
 			return
@@ -132,7 +132,7 @@ def main(message):
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار :
 </b>
 	''',reply_markup=keyboard)
 			return
@@ -148,7 +148,7 @@ def main(message):
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار :
 </b>
 	''',reply_markup=keyboard)
 			return
@@ -240,7 +240,7 @@ def menu_callback(call):
 • Gateway : {gate}
 {info}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : po</b>'''
 
 					if 'Charged' in last or 'Funds' in last:
 						live += 1
