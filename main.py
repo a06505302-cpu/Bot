@@ -100,7 +100,7 @@ def start(message):
 	bot.send_message(chat_id=message.chat.id, text=f'''<b> 
 𝗧𝗵𝗲𝘀𝗲 𝗔𝗿𝗲 𝗧𝗵𝗲 𝗕𝗼𝘁'𝗦 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
 
-Paypal Commerce $1 ✅ <code>/chk </code> 𝗻𝘂𝗺𝗯𝗲𝗿|𝗺𝗺|𝘆𝘆|𝗰𝘃𝗰
+Paypal Commerce $5 ✅ <code>/chk </code> 𝗻𝘂𝗺𝗯𝗲𝗿|𝗺𝗺|𝘆𝘆|𝗰𝘃𝗰
 𝗦𝗧𝗔𝗧𝗨𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 </b>
 ''',reply_markup=keyboard)
 @bot.message_handler(content_types=["document"])
@@ -186,7 +186,7 @@ def menu_callback(call):
 	def my_function():
 		id=call.from_user.id
 		user_id = call.from_user.id
-		gate='Paypal Commerce $1'
+		gate='Paypal Commerce $5'
 		dd = 0
 		live = 0
 		ccnn = 0
@@ -269,7 +269,7 @@ def menu_callback(call):
 		stopuser[f'{id}']['status'] = 'start'
 		bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
-					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @FJ0FF')
+					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ')
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 
@@ -303,7 +303,7 @@ def respond_to_vbv(message):
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي >> {name}
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : 
 </b>
 	''',reply_markup=keyboard)
 		return
@@ -319,7 +319,7 @@ def respond_to_vbv(message):
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي >> {name}
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : 
 </b>
 	''',reply_markup=keyboard)
 		return
@@ -384,7 +384,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 • Gateway : {gate}		
 {info}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : </b>'''
 	if 'Charged' in last or 'Funds' in last:
 		vbvv = 'Error'
 		msg=f'''<b>Approved  ✅
