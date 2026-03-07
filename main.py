@@ -100,7 +100,7 @@ def start(message):
 	bot.send_message(chat_id=message.chat.id, text=f'''<b> 
 𝗧𝗵𝗲𝘀𝗲 𝗔𝗿𝗲 𝗧𝗵𝗲 𝗕𝗼𝘁'𝗦 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
 
-Paypal Commerce $5 ✅ <code>/chk </code> 𝗻𝘂𝗺𝗯𝗲𝗿|𝗺𝗺|𝘆𝘆|𝗰𝘃𝗰
+Paypal Commerce $1 ✅ <code>/chk </code> 𝗻𝘂𝗺𝗯𝗲𝗿|𝗺𝗺|𝘆𝘆|𝗰𝘃𝗰
 𝗦𝗧𝗔𝗧𝗨𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 </b>
 ''',reply_markup=keyboard)
 @bot.message_handler(content_types=["document"])
@@ -186,7 +186,7 @@ def menu_callback(call):
 	def my_function():
 		id=call.from_user.id
 		user_id = call.from_user.id
-		gate='Paypal Commerce $5'
+		gate='Paypal Commerce $1'
 		dd = 0
 		live = 0
 		ccnn = 0
@@ -253,7 +253,7 @@ def menu_callback(call):
 {info}
 • Vbv : {vbvv}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : </b>'''
 						bot.send_message(call.from_user.id, msg)
 					elif 'security code is incorrect' in last:
 						ccn+=1
