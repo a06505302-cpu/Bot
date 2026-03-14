@@ -100,7 +100,7 @@ def start(message):
 	bot.send_message(chat_id=message.chat.id, text=f'''<b> 
 𝗧𝗵𝗲𝘀𝗲 𝗔𝗿𝗲 𝗧𝗵𝗲 𝗕𝗼𝘁'𝗦 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
 
-Paypal Commerce $1 ✅ <code>/chk </code> 𝗻𝘂𝗺𝗯𝗲𝗿|𝗺𝗺|𝘆𝘆|𝗰𝘃𝗰
+Paypal Commerce $0.10 ✅ <code>/chk </code> 𝗻𝘂𝗺𝗯𝗲𝗿|𝗺𝗺|𝘆𝘆|𝗰𝘃𝗰
 𝗦𝗧𝗔𝗧𝗨𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 </b>
 ''',reply_markup=keyboard)
 @bot.message_handler(content_types=["document"])
@@ -186,7 +186,7 @@ def menu_callback(call):
 	def my_function():
 		id=call.from_user.id
 		user_id = call.from_user.id
-		gate='Paypal Commerce $1'
+		gate='Paypal Commerce $0.10'
 		dd = 0
 		live = 0
 		ccnn = 0
@@ -203,7 +203,7 @@ def menu_callback(call):
 			}
 				for cc in lino:
 					if stopuser[f'{id}']['status'] == 'stop':
-						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @FJ0FF')
+						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ')
 						return
 					info = str(dato(cc[:6]))
 					start_time = time.time()
@@ -275,7 +275,7 @@ def menu_callback(call):
 
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.chk') or message.text.lower().startswith('/chk'))
 def respond_to_vbv(message):
-	gate='Paypal Commerce $1'
+	gate='Paypal Commerce $0.10'
 	name = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
